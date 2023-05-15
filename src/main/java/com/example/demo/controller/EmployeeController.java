@@ -25,4 +25,17 @@ public class EmployeeController {
 		return employeeService.getExperiencedEmployee(experience);
 		
 	}
+	
+	@GetMapping("/getAdmin")
+	public String getAdmin()
+	{
+		return "Admin Page";
+		
+	}
+	
+	@GetMapping("/getInformation")
+	public String getInformation()
+	{
+		return "Information Page";
+	}
 }
